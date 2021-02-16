@@ -1,5 +1,9 @@
-export default {
-  collectCoverageFrom: ['<rootDir>/src/**/*.ts'],
+module.exports = {
+  collectCoverageFrom: [
+    '<rootDir>/src/**/*.ts',
+    '!<rootDir>/src/**/*-protocols.ts',
+    '!**/protocols/**'
+  ],
   coverageDirectory: 'coverage',
   roots: [
     '<rootDir>/src'
